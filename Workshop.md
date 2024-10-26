@@ -23,9 +23,9 @@ Before we begin, we will configure the browser windows to make the Workshop.md f
 
 Here are the suggested steps to configure your desktop to make Workshop.md always visible.
 
-1. Open https://github.com/ghusdev1899/Beyond-the-IDE-Instructions/blob/main/Workshop.md in a broswer.
+1. Open https://github.com/devrellabs/Beyond-the-IDE-Instructions/blob/main/Workshop.md in a broswer.
 
-2. Open https://github.com/ghusdev1899/PartsUnlimited **in a separate browser tab**. If you are on Windows, drag the tab to the right side of the screen until it snaps to the right side of the screen. Select the above tab when prompted to select the tab to snap to the left side of the screen. The idea is that we want to have the Workshop.md file on the left side of the screen and a GitHub repo on the right side of the screen.
+2. Open https://github.com/devrellabs/PartsUnlimited **in a separate browser tab**. If you are on Windows, drag the tab to the right side of the screen until it snaps to the right side of the screen. Select the above tab when prompted to select the tab to snap to the left side of the screen. The idea is that we want to have the Workshop.md file on the left side of the screen and a GitHub repo on the right side of the screen.
 
 3. Move the vertical slider until you can comfortably see the instructions in Workshop.md and the GitHub repo side by side. 
 
@@ -99,7 +99,7 @@ Where in this repo do we have code that calculates sales tax?
 ```
 ![Find CalculateTax](./Images/picdark007.png?raw=true "Find CalculateTax")  
 
-Awesome! GitHub Copilot has found the `CalculateTax` function in the `TaxCalculator` class. Let's take a look at this code. Click on the link to [DefaultShippingTaxCalculator.cs](https://github.com/ghusdev1899/PartsUnlimited/blob/main/PartsUnlimited-aspnet45/src/PartsUnlimitedWebsite/Utils/DefaultShippingTaxCalculator.cs) to see the full code. skim down to the `CalculateTax` function. We can see that the `CalculateTax` function takes a `postalCode` as a parameter and returns the sales tax for that postal code but, it is currently hard coded to return the sales tax rate for only for the state of Washington. The issue suggests that we should update this code to use a 3rd party API to calculate the sales tax for any postal code. 
+Awesome! GitHub Copilot has found the `CalculateTax` function in the `TaxCalculator` class. Let's take a look at this code. Click on the link to [DefaultShippingTaxCalculator.cs](https://github.com/devrellabs/PartsUnlimited/blob/main/PartsUnlimited-aspnet45/src/PartsUnlimitedWebsite/Utils/DefaultShippingTaxCalculator.cs) to see the full code. skim down to the `CalculateTax` function. We can see that the `CalculateTax` function takes a `postalCode` as a parameter and returns the sales tax for that postal code but, it is currently hard coded to return the sales tax rate for only for the state of Washington. The issue suggests that we should update this code to use a 3rd party API to calculate the sales tax for any postal code. 
 
 ![Review CalculateTax](./Images/picdark017.png?raw=true "Review CalculateTax")  
 
