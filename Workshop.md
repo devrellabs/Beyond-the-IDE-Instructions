@@ -21,7 +21,7 @@ Microsoft Edge and Google Chrome are installed on all of these machines. Microso
 Open Google Chrome (also installed) on this machine and go to:
 ## https://gh.io/workspace-waitlist and login with your _personal_ GitHub user account and then sign-up for the waitlist.
 
-![join-workspace-waitlist](https://github.com/user-attachments/assets/fd49ff64-4714-4a40-8d52-f6b85a4afa8f)
+![join-workspace-waitlist](./Images/picdark020.png?raw=true "join-workspace-waitlist")
 
 Then, return to your Microsoft Edge and visit this issue (https://github.com/orgs/DevRelLabs/discussions/1) in this repo and comment with your GitHub username. 
 
