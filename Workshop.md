@@ -13,6 +13,20 @@ GitHub Copilot isn’t just for your favorite code editor—it offers a range of
 - **Dave Burnison** [@daveburnisonms](https://github.com/daveburnisonms), Senior DevOps Advocate, GitHub
 - **Christina Warren** [@filmgirl](https://github.com/filmgirl), Senior Developer Advocate, GitHub
 
+
+## DO THIS FIRST
+
+Microsoft Edge and Google Chrome are installed on all of these machines. Microsoft Edge is the default browswer, so that's where you should sign-in with the credentials you were given when you entered the room. This will be the main test account where you will work through this lab. _**However**_, if you want to explore GitHub Copilot Workspace, you will need to take one extra step.
+
+Open Google Chrome (also installed) on this machine and go to:
+## https://gh.io/workspace-waitlist and login with your _personal_ GitHub user account and then sign-up for the waitlist.
+
+![join-workspace-waitlist](https://github.com/user-attachments/assets/fd49ff64-4714-4a40-8d52-f6b85a4afa8f)
+
+Then, return to your Microsoft Edge and visit this issue (https://github.com/orgs/DevRelLabs/discussions/1) in this repo and comment with your GitHub username. 
+
+We will whitelist you for access to GitHub Workspace, which you can access from your personal GitHub account in Google Chrome during that portion of our talk.
+
 ## Before you begin
 
 ### 1. Configure your desktop to make Workshop.md always visible
@@ -23,9 +37,9 @@ Before we begin, we will configure the browser windows to make the Workshop.md f
 
 Here are the suggested steps to configure your desktop to make Workshop.md always visible.
 
-1. Open https://github.com/devrellabs/Beyond-the-IDE-Instructions/blob/main/Workshop.md in a broswer.
+1. Open https://github.com/DevRelLabs/Beyond-the-IDE-Instructions/blob/main/Workshop.md in a broswer.
 
-2. Open https://github.com/devrellabs/PartsUnlimited **in a separate browser tab**. If you are on Windows, drag the tab to the right side of the screen until it snaps to the right side of the screen. Select the above tab when prompted to select the tab to snap to the left side of the screen. The idea is that we want to have the Workshop.md file on the left side of the screen and a GitHub repo on the right side of the screen.
+2. Open https://github.com/DevRelLabs/PartsUnlimited **in a separate browser tab**. If you are on Windows, drag the tab to the right side of the screen until it snaps to the right side of the screen. Select the above tab when prompted to select the tab to snap to the left side of the screen. The idea is that we want to have the Workshop.md file on the left side of the screen and a GitHub repo on the right side of the screen.
 
 3. Move the vertical slider until you can comfortably see the instructions in Workshop.md and the GitHub repo side by side. 
 
@@ -100,6 +114,7 @@ Where in this repo do we have code that calculates sales tax?
 ![Find CalculateTax](./Images/picdark007.png?raw=true "Find CalculateTax")  
 
 Awesome! GitHub Copilot has found the `CalculateTax` function in the `TaxCalculator` class. Let's take a look at this code. Click on the link to [DefaultShippingTaxCalculator.cs](https://github.com/devrellabs/PartsUnlimited/blob/main/PartsUnlimited-aspnet45/src/PartsUnlimitedWebsite/Utils/DefaultShippingTaxCalculator.cs) to see the full code. skim down to the `CalculateTax` function. We can see that the `CalculateTax` function takes a `postalCode` as a parameter and returns the sales tax for that postal code but, it is currently hard coded to return the sales tax rate for only for the state of Washington. The issue suggests that we should update this code to use a 3rd party API to calculate the sales tax for any postal code. 
+
 
 ![Review CalculateTax](./Images/picdark017.png?raw=true "Review CalculateTax")  
 
@@ -219,6 +234,147 @@ Review the alert to get an understanding of the vulnerability. Scroll down and e
 
 For more information on Copilot Autofix check out the [**Copilot Autofix documentation**](https://docs.github.com/en/enterprise-cloud@latest/code-security/code-scanning/managing-code-scanning-alerts/responsible-use-autofix-code-scanning#about-copilot-autofix-for-code-scanning) and the blog post announcing the general avialability of Copilot Autofix - [**Found means fixed: Secure code more than three times faster with Copilot Autofix**](https://github.blog/news-insights/product-news/secure-code-more-than-three-times-faster-with-copilot-autofix/).
 
+# Copilot in the GitHub CLI
+
+GitHub Copilot can also be used via the command line, using the GitHub CLI. The GitHub CLI is a command-line tool that makes it easy to interact with GitHub from the command line. It is available for Windows, macOS, and Linux.
+
+To use Copilot in the CLI, you'll first need to install the [GitHub CLI](https://cli.github.com/)
+
+On macOS, the easiest way to do this is via [Homebrew](https://brew.sh/), with the following command:
+
+```
+brew install gh
+```
+On Windows, the easiest way is via WinGet in the Windows Terminal with the following command:
+
+```
+winget install --id GitHub.cli
+```
+Full installation instructions are available at [https://github.com/cli/cli#installation](https://github.com/cli/cli#installation)
+
+Once the CLI is installed, you'll need to login to your GitHub account with the following command:
+
+```
+gh auth login --web -h github.com
+```
+
+And you can follow the prompts to authenticate your account. 
+
+**Pro tip:** If you're using a GitHub Codespace, first clear your auth tokens by typing ```export GITHUB_TOKEN=``` in the terminal. Then you can login with the ```gh auth login --web -h github.com``` command.
+
+Once authenticated, install the Copilot extension with the following command:
+
+```
+gh extension install github/gh-copilot
+```
+
+This will install the extension. You can then use Copilot in the CLI with ```gh copilot explain``` and ```gh copilot suggest```.
+
+```gh copilot explain``` will explain certain commands or how to perform a certain action, and ```gh copilot suggest``` will suggest commands for a given prompt.
+
+Here are some examples:
+
+```
+gh copilot explain "git blame"
+```
+and and example of the result:
+<img width="1330" alt="Screenshot 2024-10-27 at 9 59 18 AM" src="https://github.com/user-attachments/assets/472b1a82-6d9c-47b5-81a7-5e576c5e6986">
+
+
+
+Here is an example for ```gh copilot suggest```
+
+```
+gh copilot suggest help me write a shell script to convert a gif to an mp4 playable on a Mac using ffmpeg
+```
+<img width="1330" alt="Screenshot 2024-10-27 at 10 02 05 AM" src="https://github.com/user-attachments/assets/4e952d44-77dd-498b-9f84-905f1919a604">
+
+
+You can learn more about how to use the Copilot extension in the GitHub CLI at [https://gh.io/copilot-cli](https://gh.io/copilot-cli).
+
+## GitHub Copilot Extensions 
+
+**Purpose: Gain hands-on experience with GitHub Copilot Extensions**
+
+GitHub Copilot Extensions allow developers to integrate their favorite development tools directly into the Copilot experience. This means that AI can now not only suggest code but also interact with external databases, testing frameworks, planning and tracking tools, deployment tools, and more – **all without requiring developers to leave their flow in GitHub.com**.
+
+**NOTE**: We are not able to provide a **hands-on** experience with GitHub Copilot Extensions such as **Docker** and **Mermaid-Chart** using the user accounts that were provisioned for this workshop. These user accounts are managed by GitHub and are not able to authenticate with **Docker** and **Mermaid-Chart** which is a requirement to use these extensions. However, we have a public copy of this repository that you can use to try out these extensions with **YOUR** GitHub account. Read through the instructcions below and review the screenshots to get a feel for how these extensions enable you to stay in the flow and be more productive.
+
+Once **YOUR** GitHub account has access to GitHub Copilot Extensions you can walk through the following steps by going to https://gh.io/Copilot-Sandbox-24-Public and using GitHub Copilot Chat from the PartsUnlimited repository in the **DevRelLabs** GitHub organization. 
+
+To get started go to https://gh.io/Copilot-Sandbox-24-Public, open the **PartsUnlimited** repository as noted in the **Before you begin** section of **Workshop.md**. Jump to the **GitHub Copilot Extensions** section of the document and follow these instructions. 
+
+Previously in the **Using GitHub Copilot Chat with GitHub Actions** section, we used GitHub Copilot Chat to ask about this repo's GitHub Actions workflows. Now, we will use the **Docker** Extension to proivde a starting point for moderninzing our app to use containers and Kubernetes but the instructions and other information will come from Docker. 
+
+Bring up Copilot chat and enter the following text in the prompt box.
+
+```
+@docker Show me a GitHub Actions workflow for this application that builds the application, containerizes it, uses Azure Container Registry to store the containers and deploys the containers using Azure Kubernetes Services. Note: I want to have Dev, QA and Production environments in Azure's West US2 region.
+```
+
+Docker provides a natural language explanation of the workflow and a code snippet that shows the GitHub Actions YAML needed to fulfill our request. One of the great things about this is that we did not have to go to the documentation for Docker or the GitHub marketplace to find what actions we should use for Docker, Azure Container Registry (ACR) and Azure Kubernetes Services (AKS). Docker provided all of that information directly in the chat interface. Skim through the full response.
+
+![Summary](./Images/picdark101.png?raw=true "Summary")  
+
+Most likely, your response mentions credentials and secrets needed to interact with ACR & AKS. However, one of the most secure ways to work with Azure (and other cloud services) is to leverage OpenID Connect (OIDC). Let's see if we can ask Docker to refine the workflow using OIDC instead of credentials and secrets.
+
+Enter the following text in the prompt box.
+
+```
+@docker This is a good start but, how would I use Azure OpenID Connect for authentication instead of username and password? 
+```
+
+Docker is able to proivde a revised version of the workflow that uses OIDC tokens instead of credentials and secrets. Skim through the full response to review the differences between the original workflow and the revised workflow.
+
+![Summary](./Images/picdark102.png?raw=true "Summary")  
+
+Next we want to use the **Mermaid-Chart** extension to create a diagram that shows the relationships between the various environments in the PartsUnlimited application. Currently, GitHub Copilot Chat in GitHub.com does not allow communication with multiple extensions in the same chat thread. So, we will need to start a new chat thread to interact with the **Mermaid-Chart** extension.
+
+Enter the following text in the prompt box to start a new thread.
+
+```
+/clear
+```
+
+To set the context for **Mermaid-Chart**, start by entering the following text in the prompt box.
+
+```
+What applications are in this repo? 
+```
+
+Copilot should respond with a list of applications in the PartsUnlimited repo, including the **PartsUnlimited eCommerce Website** 
+
+![Summary](./Images/picdark103.png?raw=true "Summary")  
+
+To provide even more context, we want Copilot to give us a breakdown of the components of the **PartsUnlimited eCommerce Website**. Enter the following text in the prompt box.
+
+```
+What are the main components of the Parts Unlimited eCommerce Website? 
+```
+
+Great! Now we have enough context for **Mermaid-Chart** to create a diagram that shows the relationships between the various components of the PartsUnlimited application. 
+
+![Summary](./Images/picdark104.png?raw=true "Summary")  
+
+Now enter the following text in the prompt box.
+
+```
+@mermaid-chart Can you provide a chart showing the relationship of the components that make up this application? 
+```
+
+**Mermaid-Chart** should respond with a natural language explanation and code for a chart that shows the relationships between the various components of the PartsUnlimited application. To see and edit the chart, you should see a link in the response that says something like:
+`You can edit and view this diagram in the **Mermaid Chart Playground**.`
+
+![Summary](./Images/picdark105.png?raw=true "Summary")  
+
+Follow the link to see the chart.
+
+![Summary](./Images/picdark106.png?raw=true "Summary")  
+
+
+In this section of the workshop we used the **Docker** and **Mermaid-Chart** extensions to get a starting point for modernizing our app to use containers and Kubernetes and to create a diagram that shows the relationships between the various components of the PartsUnlimited application. We did all of this in just a few minutes with virtually no context switching, we only left GitHub.com to see the diagram. This is how GitHub Copilot Extensions can help you stay in the flow and be more productive.
+
+
 <!--
 ### 00. Header
 
@@ -234,20 +390,6 @@ Prompt text
 Explanation: Review the response and blah, blah, blah.
 -->
 
-## GitHub Copilot is purpose built for software development
-
-### 1. GitHub Copilot is only for programming
-
-While we can use GitHub Copilot Chat to get answers to programming questions, we cannot use GitHub Copilot Chat to ask general questions. For example, you cannot ask about the weather or the latest sports scores. Enter the question below in the chat interface.
-
-```
-Who won the Super Bowl in 1986?
-```
-![GitHub Copilot is only for programming](./Images/picdark002.png?raw=true "GitHub Copilot is only for programming")
-
-That's ok. Everyone knows that [the Chicago Bears won Super Bowl XX in 1986](https://www.chicagotribune.com/2016/01/26/chicago-bears-win-super-bowl-xx/). 😉
-
-![Chicago Bears win Super Bowl XX](https://www.chicagotribune.com/wp-content/uploads/migration/2016/01/26/QP6TV57DS5ABJDLYCFXR6BGJEM.jpg?w=1200 "Chicago Bears win Super Bowl XX")
 
 # Wrap up and additional reading
 
