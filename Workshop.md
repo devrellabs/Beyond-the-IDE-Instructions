@@ -306,7 +306,7 @@ gh copilot suggest help me write a shell script to convert a gif to an mp4 playa
 
 You can learn more about how to use the Copilot extension in the GitHub CLI at [https://gh.io/copilot-cli](https://gh.io/copilot-cli).
 
-**Updaate 10/29/2024**: GitHub Copilot is now available in Windows Terminal via a new feature called Terminal Chat. This allows you to ask more general questions in the context of your Terminal. More details are available https://devblogs.microsoft.com/commandline/github-copilot-in-windows-terminal/ and https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-windows-terminal
+**Update 10/29/2024**: GitHub Copilot is now available in Windows Terminal via a new feature called Terminal Chat. This allows you to ask more general questions in the context of your Terminal. More details are available https://devblogs.microsoft.com/commandline/github-copilot-in-windows-terminal/ and https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-windows-terminal
 
 # GitHub Copilot Workspace
 
