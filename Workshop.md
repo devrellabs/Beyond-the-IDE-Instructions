@@ -55,13 +55,14 @@ In this configuration, we can see the `Workshop.md` file to one side of the scre
 
 ### 1. Accessing GitHub Copilot Chat in GitHub.com
 
-1. Click on the **Open Copilot Chat** icon in the lower right corner of the GitHub.com window. See the above screenshot for the location of the icon.
-
+Click on the **Open Copilot Chat** icon in the lower right corner of the GitHub.com window. See the above screenshot for the location of the icon.
+<!--
 2. You may see some starter questions such as **What questions can I ask?**. Click on that question or enter `What questions can I ask?` in the chat window and press `Enter`.
 
 ![What can Copilot do](./Images/picdark003.png?raw=true "What can Copilot do")
 
 To get started with GitHub Copilot Chat, you can ask Copilot about Copilot. Also, see the [GitHub Copilot Chat documentation - Currently available skills](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/asking-github-copilot-questions-in-githubcom#currently-available-skills).
+--> 
 
 ### 2. Learn about the current repository
 
