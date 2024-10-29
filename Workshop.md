@@ -519,5 +519,15 @@ If you have completed all the exercises, and there is still time left in today's
 
 **Check out available GitHub Copilot Extensions in the GitHub Marketplace**
 + https://github.com/marketplace?type=apps&copilot_app=true
++ 
+# Please let us know what you think of GitHub Copilot and this workshop
+<!-- Instruct workshop participants to answer the poll questions found here: https://github.com/orgs/devrellabs/discussions -->
+<!-- Specifically reference the "Workshop Survey" poll questions. Also, mention that they can use the "Workshop Feedback & Suggestions" for general feedback and/or suggestions. -->
+We would love to hear your thoughts on GitHub Copilot and this workshop. 
+- Please take a moment to answer the poll questions in the [**Workshop Survey**](https://github.com/orgs/devrellabs/discussions). 
+  - Forthe quesitons, simply select your response and click the "Vote" button. 
+  - Please feel free to leave a comment to let us know what you really liked and/or what we could do differently to make this workshop more valuable in the future. 
+
+
 
 
