@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/48653198-32c5-4e7f-b39c-5d306557c047)# Hands-on Workshop
+# Hands-on Workshop
 ## Beyond the IDE: Unlocking the full power of GitHub Copilot
 Revision 1.0 2024-10-25
 
