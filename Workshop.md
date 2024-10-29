@@ -1,4 +1,4 @@
-# Hands-on Workshop
+![image](https://github.com/user-attachments/assets/48653198-32c5-4e7f-b39c-5d306557c047)# Hands-on Workshop
 ## Beyond the IDE: Unlocking the full power of GitHub Copilot
 Revision 1.0 2024-10-25
 
@@ -238,6 +238,16 @@ Review the alert to get an understanding of the vulnerability. Scroll down and e
 
 For more information on Copilot Autofix check out the [**Copilot Autofix documentation**](https://docs.github.com/en/enterprise-cloud@latest/code-security/code-scanning/managing-code-scanning-alerts/responsible-use-autofix-code-scanning#about-copilot-autofix-for-code-scanning) and the blog post announcing the general avialability of Copilot Autofix - [**Found means fixed: Secure code more than three times faster with Copilot Autofix**](https://github.blog/news-insights/product-news/secure-code-more-than-three-times-faster-with-copilot-autofix/).
 
+# Copilot Chat in GitHub Mobile
+
+In addition to asking questions on GitHub.com, GitHub Copilot Chat also works on GitHub Mobile for iOS and Android.
+
+You can see a video overview of the feature below (will open a YouTube link)
+
+[![Copilot Mobile Video](https://img.youtube.com/vi/LGoPXRYgB6s/0.jpg)](https://www.youtube.com/watch?v=LGoPXRYgB6s)
+
+There is additional documentation at https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-github-mobile
+
 # Copilot in the GitHub CLI
 
 GitHub Copilot can also be used via the command line, using the GitHub CLI. The GitHub CLI is a command-line tool that makes it easy to interact with GitHub from the command line. It is available for Windows, macOS, and Linux.
@@ -295,6 +305,8 @@ gh copilot suggest help me write a shell script to convert a gif to an mp4 playa
 
 
 You can learn more about how to use the Copilot extension in the GitHub CLI at [https://gh.io/copilot-cli](https://gh.io/copilot-cli).
+
+**Updaate 10/29/2024**: GitHub Copilot is now available in Windows Terminal via a new feature called Terminal Chat. This allows you to ask more general questions in the context of your Terminal. More details are available https://devblogs.microsoft.com/commandline/github-copilot-in-windows-terminal/ and https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-windows-terminal
 
 # GitHub Copilot Workspace
 
