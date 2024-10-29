@@ -295,6 +295,89 @@ gh copilot suggest help me write a shell script to convert a gif to an mp4 playa
 
 You can learn more about how to use the Copilot extension in the GitHub CLI at [https://gh.io/copilot-cli](https://gh.io/copilot-cli).
 
+# GitHub Copilot Workspace
+
+In Google Chrome, where you are logged into your personal GitHub account, go to this repo: https://github.com/devrellabs/Beyond-the-IDE-Instructions/ (this is the repository you are in right now)
+
+Click on the "Issues" tab and explore some of the existing issues. 
+
+In the Beyond the IDE Repo, you can experiment with what the calculator prompt looks like, using this issue: https://github.com/devrellabs/Beyond-the-IDE-Instructions/issues/1
+
+If you want to explore more issues for the demo that @filmgirl showed off, you can go to this repo and look at the open issues: https://github.com/filmgirl/demo-calc/issues
+
+![Open-Issues](https://github.com/user-attachments/assets/3d29fc26-64b7-4ef9-9024-8de768961c6f)
+
+
+## Opening an Existing Issue in Copilot Workspace
+![workspace-issue](https://github.com/user-attachments/assets/610535fd-32cc-4fbb-8706-b0e5ea16d786)
+
+Once you have found an issue that you want to work on, click on the "Open in Workspace" button to open the issue in Copilot Workspace.
+
+This will open up a Brainstorming session where you can add additional context and get suggestions of ideas about what you want to accomplish.
+
+![copilot-workspace-default](https://github.com/user-attachments/assets/7b9c642c-76e8-4c6f-ba2b-3760efc8a20f)
+
+When you're ready to see the code, you can choose to Generate a Plan or Generate Code (which will also generate a plan) and Copilot Workspace will create a solution for you that you can modify and explore.
+
+You can also make revisions to the plan, which will in turn, makes changes to the generated code.
+
+## Previewing the Code Created by Copilot Workspace in GitHub Codespaces
+
+![open-in-codespaces](https://github.com/user-attachments/assets/d3d0817b-68aa-478b-9952-0e9ebdeaa9a3)
+
+If you want to preview what the code created by Copilot Workspace looks like, you can do so by pressing the "Open in Codespace" button in the top right corner of the screen. This will open a branch of your project, tied to this issue, in a GitHub Codespace.
+
+![workspace-codespaces](https://github.com/user-attachments/assets/7c9aa4d5-133a-4dc0-b4a3-b23baa5f59b5)
+
+In GitHub Codespaces, you can see the live code and make changes as you wish. You can also use Copilot Chat to help answer questions or to write new code.
+
+**Tip:** Install a live server extension, such as "Live Server" or "Live Preview" to easily see the app and to see changes in real time. Right click on ```index.html``` and select "Open with Live Server" or "Show Preview" to see the app.
+
+## Creating a Pull Request
+
+Once you're satisfied with the code that has been created, you can press the "Create a Pull Request" button to create a PR on its own branch in the repo where the issue was created.
+
+![create-workspace-pr](https://github.com/user-attachments/assets/555c6a41-ec5f-4006-8222-0efb24506b63)
+
+You can use the "Generate Description" button to create an AI-generated PR description, or you can write your own.
+
+You can also choose if you want this PR, if merged, to close the issue it is associated with.
+
+You can also choose to create a draft pull request, push to the current branch, or push to a new branch.
+
+## Previewing PRs Created by Copilot Workspace
+
+You can look at a pull request that was genereatd by Copilot Workspace by clicking on the "Pull Requests" tab and going to an open PR. In the Beyond the IDE repo, that PR is here: https://github.com/devrellabs/Beyond-the-IDE-Instructions/pull/2.  
+
+![view-pr-in-workspace](https://github.com/user-attachments/assets/0af68dc9-cccc-4a35-ada9-017f28d4fd8f)
+
+This will open up the Copilot Workspace session and show its generated code changes.
+
+![copilot-workspace githubnext com_filmgirl_demo-calc_issues_3_shareId=1bc75639-3b35-410d-9da9-30ac01827204](https://github.com/user-attachments/assets/08704854-fb99-439f-a9e8-8681d50b534f)
+
+You can then open this code in a Codespace, VS Code, and make revisions. You can then push those changes to a new branch, create a new PR, or update the existing PR.
+
+## Create Your Own Issues
+
+You can also create your own issues for this project to add functionality or make changes to the project. 
+
+If you want to use a more established project, check-out the https://github.com/filmgirl/demo-calc/ repo, which has some starter issues already.
+
+You can also experiment in your own repositories on your own account.
+
+Click on the "Create New Issue" button in the issues tab and name your issue anything you want. Offer a description of what change you'd like to make. 
+
+![github com_filmgirl_demo-calc_issues_new_template=Blank+issue](https://github.com/user-attachments/assets/1e0b3d46-b009-48ff-8b7d-3ef445654932)
+
+After creating the issue, click on the "Open in Workspace" button to open the issue in Copilot Workspace.
+
+## More Copilot Workspace Resources
+
+To learn more about GitHub Copilot Workspace, visit the user manual:
+
+https://github.com/githubnext/copilot-workspace-user-manual?tab=readme-ov-file#-copilot-workspace-user-manual
+
+
 # GitHub Copilot Extensions 
 
 **Purpose: Gain hands-on experience with GitHub Copilot Extensions**
