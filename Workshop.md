@@ -29,25 +29,25 @@ We will whitelist you for access to GitHub Workspace, which you can access from 
 
 ## Before you begin
 
-### 1. Configure your desktop to make Workshop.md always visible
+### 1. Configure your desktop to make Workshop.md easily accessible
 
-Before we begin, we will configure the browser windows to make the Workshop.md file always visible. This will allow you to easily switch between the lab instructions and any editor windows you have open.
+Before we begin, we will configure the browser windows to make the Workshop.md file easily accessible. This will allow you to easily switch between the lab instructions and the PartsUnlimited Repo and other windows you open to complete the workshop.
 
 ![Split View](./Images/gifdark001.gif?raw=true "Split View")
 
-Here are the suggested steps to configure your desktop to make Workshop.md always visible.
+Here are the suggested steps to configure your desktop to make Workshop.md easily accessible.
 
 1. Open https://github.com/DevRelLabs/Beyond-the-IDE-Instructions/blob/main/Workshop.md in a broswer.
 
-2. Open https://github.com/DevRelLabs/PartsUnlimited **in a separate browser tab**. If you are on Windows, drag the tab to the right side of the screen until it snaps to the right side of the screen. Select the above tab when prompted to select the tab to snap to the left side of the screen. The idea is that we want to have the Workshop.md file on the left side of the screen and a GitHub repo on the right side of the screen.
+2. Open https://github.com/DevRelLabs/PartsUnlimited **in a separate browser tab**.
+3. **OPTIONAL:** Drag the tab to the right side of the screen until it snaps to the right side of the screen. Select the above tab when prompted to select the tab to snap to the left side of the screen. The idea is that we want to have the Workshop.md file on the left side of the screen and a GitHub repo on the right side of the screen. Move the vertical slider until you can comfortably see the instructions in Workshop.md and the GitHub repo side by side. 
 
-3. Move the vertical slider until you can comfortably see the instructions in Workshop.md and the GitHub repo side by side. 
 
-4. If needed, adjust the zoom level so that you can comfortably read the instructions in Workshop.md and work with the GitHub repo side by side. 
+4. If needed, adjust the zoom level so that you can comfortably read the instructions in Workshop.md and work with the GitHub repo. 
 
 This is just a suggestion, arrange the windows, set the zoom level, etc. in a way that works best for you.
 
-Now we can see the `Workshop.md` file to one side of the screen while we are executing the actions in GitHub Copilot Chat in GitHub.com on the other side of the screen. 
+In this configuration, we can see the `Workshop.md` file to one side of the screen while we are executing the actions in GitHub Copilot Chat in GitHub.com on the other side of the screen. 
 
 ![Split View](./Images/picdark001.png?raw=true "Split View")
 
@@ -295,7 +295,7 @@ gh copilot suggest help me write a shell script to convert a gif to an mp4 playa
 
 You can learn more about how to use the Copilot extension in the GitHub CLI at [https://gh.io/copilot-cli](https://gh.io/copilot-cli).
 
-## GitHub Copilot Extensions 
+# GitHub Copilot Extensions 
 
 **Purpose: Gain hands-on experience with GitHub Copilot Extensions**
 
