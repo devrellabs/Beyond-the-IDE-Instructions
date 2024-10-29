@@ -40,8 +40,8 @@ Here are the suggested steps to configure your desktop to make Workshop.md easil
 1. Open https://github.com/DevRelLabs/Beyond-the-IDE-Instructions/blob/main/Workshop.md in a broswer.
 
 2. Open https://github.com/DevRelLabs/PartsUnlimited **in a separate browser tab**.
-3. **OPTIONAL:** Drag the tab to the right side of the screen until it snaps to the right side of the screen. Select the above tab when prompted to select the tab to snap to the left side of the screen. The idea is that we want to have the Workshop.md file on the left side of the screen and a GitHub repo on the right side of the screen. Move the vertical slider until you can comfortably see the instructions in Workshop.md and the GitHub repo side by side. 
 
+3. **OPTIONAL:** Drag the tab to the right side of the screen until it snaps to the right side of the screen. Select the above tab when prompted to select the tab to snap to the left side of the screen. The idea is that we want to have the Workshop.md file on the left side of the screen and a GitHub repo on the right side of the screen. Move the vertical slider until you can comfortably see the instructions in Workshop.md and the GitHub repo side by side. 
 
 4. If needed, adjust the zoom level so that you can comfortably read the instructions in Workshop.md and work with the GitHub repo. 
 
